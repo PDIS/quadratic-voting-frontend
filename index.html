@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>平方投票</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/dvote.js"></script>
+
+        <script>
+            $(document).ready(function (event) {
+                //資料內容
+                var data = {
+                    datas: [
+                        { TeamName: "TeamName1", ProposalTitle: "Title1", ProposalID: "1" },
+                        { TeamName: "TeamName2", ProposalTitle: "Title2", ProposalID: "2" },
+                        { TeamName: "TeamName3", ProposalTitle: "Title3", ProposalID: "3" },
+                        { TeamName: "TeamName4", ProposalTitle: "Title4", ProposalID: "4" },
+                        { TeamName: "TeamName5", ProposalTitle: "Title5", ProposalID: "5" }
+                    ]
+                };
+
+                //初始化 elementId, 資料
+                dVote("d-vote", data);
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="md-content" style="padding: 24px 12px">
+            <section class="md-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="title">
+                                <h2 class="title__title">我要投票</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-left" style="margin:0 0 4px 16px">
+                                每人點數99點
+                            </p>
+                            <p class="text-left" style="margin:0 0 4px 16px">
+                                投票期間皆可進行修改或重新投票
+                            </p>
+                            <p class="text-left" style="margin:0 0 8px 16px">
+                                每票扣除N<sup>2</sup>點數，如投同一隊第一票1點，第二票4點...以此類推
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                    <!--Table-->
+                    <div class="row">
+                        <div id="d-vote"></div>
+                    </div>
+                    <!--end Table-->
+
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
