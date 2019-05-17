@@ -63,7 +63,7 @@
 
                 document.getElementById(objectId).innerHTML = tableView;
                 UpdateCost();
-            }
+            } 
         }
 
 
@@ -75,7 +75,7 @@
             document.getElementsByClassName('nvote')[num].value = voteCount;
             UpdateCost();
         }
-
+        
         function btnAdd(num) {
             if (checkPoint(num)) {
                 var voteCount = ++document.getElementsByClassName('nvote')[num].value;
@@ -96,7 +96,7 @@
                     CostedPoint += (parseInt(Votes[index].value)+1) * (parseInt(Votes[index].value)+1);
                     continue;
                 }
-
+                
                 CostedPoint += parseInt(Votes[index].value) * parseInt(Votes[index].value);
             }
             if (leftPoint - CostedPoint < 0) return false;
@@ -113,3 +113,4 @@
             }
             document.getElementById('lb_PointLeft').innerHTML = leftPoint - totalCost;
         }
+        

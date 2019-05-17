@@ -1,4 +1,4 @@
-<html>
+﻿<html>
     <head>
         <title>平方投票</title>
         <meta charset="utf-8">
@@ -14,18 +14,159 @@
                 //資料內容
                 var data = {
                     datas: [
-                        { TeamName: "TeamName1", ProposalTitle: "Title1", ProposalID: "1" },
-                        { TeamName: "TeamName2", ProposalTitle: "Title2", ProposalID: "2" },
-                        { TeamName: "TeamName3", ProposalTitle: "Title3", ProposalID: "3" },
-                        { TeamName: "TeamName4", ProposalTitle: "Title4", ProposalID: "4" },
-                        { TeamName: "TeamName5", ProposalTitle: "Title5", ProposalID: "5" }
+                        { ProposalID: "82", TeamName: "行銷與流通科", ProposalTitle: "深層海水", SeqNum: "1" }
+                        , { ProposalID: "53", TeamName: "在海一芳", ProposalTitle: "透視空污、清新海風", SeqNum: "2" }
+                        , { ProposalID: "85", TeamName: "忍者龜的神預測", ProposalTitle: "Smart Flood Observatory 智能防洪即時預警系統", SeqNum: "3" }
+                        , { ProposalID: "67", TeamName: "中醫藥司", ProposalTitle: "安心甩累Fun鬆一波", SeqNum: "4" }
+                        , { ProposalID: "102", TeamName: "青憲口香糖", ProposalTitle: "真的假不了，假的真不了", SeqNum: "5" }
+                        , { ProposalID: "32", TeamName: "職畜", ProposalTitle: "行業差異", SeqNum: "6" }
+                        , { ProposalID: "57", TeamName: "喫桃", ProposalTitle: "作陣來喫桃", SeqNum: "7" }
+                        , { ProposalID: "21", TeamName: "畜電", ProposalTitle: "自動調節", SeqNum: "8" }
+                        , { ProposalID: "39", TeamName: "抵嘉真順", ProposalTitle: "舒緩嘉義市街道塞車之智慧交通號誌進行最佳化分析建模", SeqNum: "9" }
+                        , { ProposalID: "72", TeamName: "偵防分署", ProposalTitle: "全球毒品產地研析", SeqNum: "10" }
+                        , { ProposalID: "108", TeamName: "walking911", ProposalTitle: "AI輔助遠端救護", SeqNum: "11" }
+                        , { ProposalID: "18", TeamName: "糧資", ProposalTitle: "實事求是", SeqNum: "12" }
+                        , { ProposalID: "12", TeamName: "糧架", ProposalTitle: "損益平衡", SeqNum: "13" }
+                        , { ProposalID: "8", TeamName: "禽畜", ProposalTitle: "無害防治", SeqNum: "14" }
+                        , { ProposalID: "80", TeamName: "嘿哭麥來", ProposalTitle: "氣喘遠離我-臭氧防護的亮燈指標 Advances in Ozone Research and Application: Prevention of Ozone attack", SeqNum: "15" }
+                        , { ProposalID: "40", TeamName: "公務人才挖挖挖", ProposalTitle: "公務人才篩選器(資訊分析系統)", SeqNum: "16" }
+                        , { ProposalID: "34", TeamName: "電糧", ProposalTitle: "分散電力", SeqNum: "17" }
+                        , { ProposalID: "124", TeamName: "你丟我撿", ProposalTitle: "台北垃圾收集處理智慧方案", SeqNum: "18" }
+                        , { ProposalID: "48", TeamName: "", ProposalTitle: "提昇嘉義市交通安全之策進作為", SeqNum: "19" }
+                        , { ProposalID: "88", TeamName: "跨領域研究室", ProposalTitle: "全職爸媽休憩小棧", SeqNum: "20" }
+                        , { ProposalID: "36", TeamName: "銀髮天使", ProposalTitle: "銀髮安居計畫", SeqNum: "21" }
+                        , { ProposalID: "9", TeamName: "質糧", ProposalTitle: "農路品質", SeqNum: "22" }
+                        , { ProposalID: "44", TeamName: "石虎", ProposalTitle: "希望路燈可以更智慧", SeqNum: "23" }
+                        , { ProposalID: "41", TeamName: "媽媽哩滴隊", ProposalTitle: "婦幼安全與托育資訊", SeqNum: "24" }
+                        , { ProposalID: "113", TeamName: "3D騎士", ProposalTitle: "即刻救園", SeqNum: "25" }
+                        , { ProposalID: "63", TeamName: "苗栗縣政府稅務局土地稅科", ProposalTitle: "協助提供公益出租人出租房屋面積", SeqNum: "26" }
+                        , { ProposalID: "126", TeamName: "TIIWA", ProposalTitle: "零域差-國際醫療及健康追蹤支援方案", SeqNum: "27" }
+                        , { ProposalID: "43", TeamName: "變故家庭“栗”及送愛", ProposalTitle: "公私互助-送暖與陪伴", SeqNum: "28" }
+                        , { ProposalID: "70", TeamName: "衛生福利部社會保險司", ProposalTitle: "透過行動APP補發國民年金繳款單", SeqNum: "29" }
+                        , { ProposalID: "55", TeamName: "林疫", ProposalTitle: "優先順序", SeqNum: "30" }
+                        , { ProposalID: "17", TeamName: "農水", ProposalTitle: "總體規劃", SeqNum: "31" }
+                        , { ProposalID: "22", TeamName: "農企", ProposalTitle: "明確制度", SeqNum: "32" }
+                        , { ProposalID: "25", TeamName: "農事", ProposalTitle: "結構重整", SeqNum: "33" }
+                        , { ProposalID: "26", TeamName: "政府改造小組", ProposalTitle: "解決公私部門人才流動僵固性及經費濫用", SeqNum: "34" }
+                        , { ProposalID: "16", TeamName: "水利資訊隊", ProposalTitle: "河川復育大串連", SeqNum: "35" }
+                        , { ProposalID: "31", TeamName: "換個角度來思考", ProposalTitle: "水溝蓋擴充寬度是否能真正改善積水問題?", SeqNum: "36" }
+                        , { ProposalID: "86", TeamName: "糧坊", ProposalTitle: "食品加工", SeqNum: "37" }
+                        , { ProposalID: "49", TeamName: "Fishing man", ProposalTitle: "智慧小釣手", SeqNum: "38" }
+                        , { ProposalID: "87", TeamName: "電林", ProposalTitle: "電廠農場", SeqNum: "39" }
+                        , { ProposalID: "122", TeamName: "領藥宅配沒煩惱", ProposalTitle: "長期服藥者定期用藥宅配服務", SeqNum: "40" }
+                        , { ProposalID: "56", TeamName: "桃園智慧城市隊", ProposalTitle: "城市自由行A通", SeqNum: "41" }
+                        , { ProposalID: "1", TeamName: "農務", ProposalTitle: "遠距醫療", SeqNum: "42" }
+                        , { ProposalID: "117", TeamName: "FixTW", ProposalTitle: "FixTW 2.0", SeqNum: "43" }
+                        , { ProposalID: "77", TeamName: "動物正義", ProposalTitle: "降低動物實驗過程中的痛苦、優化飼養管理及彌補監督缺陷", SeqNum: "44" }
+                        , { ProposalID: "23", TeamName: "計糧", ProposalTitle: "產業升級", SeqNum: "45" }
+                        , { ProposalID: "78", TeamName: "「浪」他們回家", ProposalTitle: "「浪」人不可怕 你我都可以", SeqNum: "46" }
+                        , { ProposalID: "110", TeamName: "構糧", ProposalTitle: "複合災害", SeqNum: "47" }
+                        , { ProposalID: "103", TeamName: "稅愛在一起", ProposalTitle: "偏鄉遠距便民服務", SeqNum: "48" }
+                        , { ProposalID: "135", TeamName: "Lumière 呂米耶盒", ProposalTitle: "Mental Health 心理保健 / 心理衛生 / 精神衛生 資源宣導與活動整合平台", SeqNum: "49" }
+                        , { ProposalID: "128", TeamName: "我是你的眼", ProposalTitle: "衛星影像崩塌地判釋", SeqNum: "50" }
+                        , { ProposalID: "112", TeamName: "中油", ProposalTitle: "煤油不再沒有，每逢寒流必煤油", SeqNum: "51" }
+                        , { ProposalID: "15", TeamName: "農材", ProposalTitle: "懸浮微粒", SeqNum: "52" }
+                        , { ProposalID: "30", TeamName: "畜益", ProposalTitle: "影響評估", SeqNum: "53" }
+                        , { ProposalID: "52", TeamName: "複丈減章好便民", ProposalTitle: "土地複丈原圖地籍調查表，減章便民", SeqNum: "54" }
+                        , { ProposalID: "92", TeamName: "材糧", ProposalTitle: "結構工程", SeqNum: "55" }
+                        , { ProposalID: "121", TeamName: "雞婆小組", ProposalTitle: "住院照顧 分享經濟", SeqNum: "56" }
+                        , { ProposalID: "114", TeamName: "出巡隊", ProposalTitle: "護您健康的在地媽祖，安你的心", SeqNum: "57" }
+                        , { ProposalID: "65", TeamName: "苗稅", ProposalTitle: "稅捐債權通報系統", SeqNum: "58" }
+                        , { ProposalID: "61", TeamName: "衛福部綜規小尖兵", ProposalTitle: "陪伴我分擔，長者不孤單", SeqNum: "59" }
+                        , { ProposalID: "51", TeamName: "守護", ProposalTitle: "巷仔內的守護者-苗栗縣老舊住宅防火計畫", SeqNum: "60" }
+                        , { ProposalID: "97", TeamName: "OhDogCat!?", ProposalTitle: "流浪動物數據統計地圖網站", SeqNum: "61" }
+                        , { ProposalID: "119", TeamName: "給你錢快快生", ProposalTitle: "學齡前兒童補助方案", SeqNum: "62" }
+                        , { ProposalID: "75", TeamName: "林桯", ProposalTitle: "坡地落石", SeqNum: "63" }
+                        , { ProposalID: "91", TeamName: "農冷", ProposalTitle: "冷鏈體系", SeqNum: "64" }
+                        , { ProposalID: "101", TeamName: "今日飛安明日運安", ProposalTitle: "全台鐵道運輸事故地圖", SeqNum: "65" }
+                        , { ProposalID: "106", TeamName: "服務足跡", ProposalTitle: "Footprint服務足跡", SeqNum: "66" }
+                        , { ProposalID: "45", TeamName: "Love.Death.PM2.5", ProposalTitle: "Love.Death.PM2.5", SeqNum: "67" }
+                        , { ProposalID: "58", TeamName: "桃園玩樂通隊", ProposalTitle: "桃園玩樂通", SeqNum: "68" }
+                        , { ProposalID: "6", TeamName: "畜疫", ProposalTitle: "高效種植", SeqNum: "69" }
+                        , { ProposalID: "95", TeamName: "", ProposalTitle: "閱讀換咖啡折價券", SeqNum: "70" }
+                        , { ProposalID: "134", TeamName: "健福", ProposalTitle: "跨境移動人口健康風險", SeqNum: "71" }
+                        , { ProposalID: "47", TeamName: "我的政見你看得見", ProposalTitle: "我的政見你看得見", SeqNum: "72" }
+                        , { ProposalID: "94", TeamName: "", ProposalTitle: "太魯閣客車安全_防止地震落石災害", SeqNum: "73" }
+                        , { ProposalID: "96", TeamName: "健康存摺護健康 ", ProposalTitle: "健康資料隨身行，數位網絡照護您", SeqNum: "74" }
+                        , { ProposalID: "99", TeamName: "校園流感疫苗接種電子化", ProposalTitle: "校園流感疫苗接種電子化", SeqNum: "75" }
+                        , { ProposalID: "74", TeamName: "", ProposalTitle: "稽查逃逸外勞", SeqNum: "76" }
+                        , { ProposalID: "64", TeamName: "苗稅房屋", ProposalTitle: "房屋地段率調整", SeqNum: "77" }
+                        , { ProposalID: "133", TeamName: "外國人好朋友", ProposalTitle: "政府服務不排外", SeqNum: "78" }
+                        , { ProposalID: "37", TeamName: "浪你窩心，浪牠安心", ProposalTitle: "改善流浪動物問題計畫", SeqNum: "79" }
+                        , { ProposalID: "19", TeamName: "防災情報站", ProposalTitle: "水平衡water balance", SeqNum: "80" }
+                        , { ProposalID: "107", TeamName: "「通」「停」順暢", ProposalTitle: "提升臺南市停車周轉率及觀光旅客人數", SeqNum: "81" }
+                        , { ProposalID: "125", TeamName: "我們與震的距離", ProposalTitle: "震當防衛", SeqNum: "82" }
+                        , { ProposalID: "46", TeamName: "台鐵訂票App不用10億", ProposalTitle: "公平合理讓需要的人在熱門時段買到台鐵票", SeqNum: "83" }
+                        , { ProposalID: "118", TeamName: "婦科領航員", ProposalTitle: "AR手術即時影像輔助辨識系統開發案", SeqNum: "84" }
+                        , { ProposalID: "20", TeamName: "雲農", ProposalTitle: "雲端農業，產季調節", SeqNum: "85" }
+                        , { ProposalID: "69", TeamName: "空氣品質感測器再進化", ProposalTitle: "空氣品質感測器異味污染物監測", SeqNum: "86" }
+                        , { ProposalID: "38", TeamName: "你農我儂", ProposalTitle: "協作嘉義市在地及鄰近區域小農商品銷售及流通等問題", SeqNum: "87" }
+                        , { ProposalID: "60", TeamName: "", ProposalTitle: "智慧分析海岸救生救難能量配置", SeqNum: "88" }
+                        , { ProposalID: "127", TeamName: "童來就打", ProposalTitle: "兒童預防接種流程可以更智慧", SeqNum: "89" }
+                        , { ProposalID: "123", TeamName: "交通任意門", ProposalTitle: "交通任意門", SeqNum: "90" }
+                        , { ProposalID: "131", TeamName: "詐貸掏空早知道", ProposalTitle: "詐貸及掏空案件偵測系統", SeqNum: "91" }
+                        , { ProposalID: "10", TeamName: "糧鑰", ProposalTitle: "藥理病理", SeqNum: "92" }
+                        , { ProposalID: "7", TeamName: "畜灸", ProposalTitle: "社區互助", SeqNum: "93" }
+                        , { ProposalID: "116", TeamName: "磐石行動", ProposalTitle: "磐石行動-優化開放資料集中最基礎且最重要的資料集分類架構和詮釋資料標準", SeqNum: "94" }
+                        , { ProposalID: "79", TeamName: "陪伴99健康100", ProposalTitle: "社區老人遠距支持服務網絡 (Distance Supporting Network for Elderly)", SeqNum: "95" }
+                        , { ProposalID: "109", TeamName: "焙茶拿鐵", ProposalTitle: "課程雷達", SeqNum: "96" }
+                        , { ProposalID: "13", TeamName: "畜瀏", ProposalTitle: "預備資疫", SeqNum: "97" }
+                        , { ProposalID: "27", TeamName: "化學品分享平台", ProposalTitle: "閒置化學品分享", SeqNum: "98" }
+                        , { ProposalID: "84", TeamName: "淼鱻", ProposalTitle: "集散水產", SeqNum: "99" }
+                        , { ProposalID: "42", TeamName: "", ProposalTitle: "身分安全", SeqNum: "100" }
+                        , { ProposalID: "4", TeamName: "自然人", ProposalTitle: "自然人憑證線上加解密與簽章服務", SeqNum: "101" }
+                        , { ProposalID: "54", TeamName: "海波浪", ProposalTitle: "消滅海廢、美麗海洋", SeqNum: "102" }
+                        , { ProposalID: "35", TeamName: "審計小尖兵", ProposalTitle: "數位轉型下政府各項計畫經費支用與成果之展現", SeqNum: "103" }
+                        , { ProposalID: "89", TeamName: "「優時間銀行雲」 新動能小組", ProposalTitle: "志工時間銀行實現樂齡台灣", SeqNum: "104" }
+                        , { ProposalID: "29", TeamName: "農訊", ProposalTitle: "有效資訊1", SeqNum: "105" }
+                        , { ProposalID: "11", TeamName: "水痕", ProposalTitle: "林道創生", SeqNum: "106" }
+                        , { ProposalID: "104", TeamName: "資源健診特攻隊", ProposalTitle: "築一個心安的窩", SeqNum: "107" }
+                        , { ProposalID: "5", TeamName: "海生", ProposalTitle: "海洋環保", SeqNum: "108" }
+                        , { ProposalID: "111", TeamName: "跑趴購", ProposalTitle: "用守時又好玩還能賺錢", SeqNum: "109" }
+                        , { ProposalID: "62", TeamName: "司法院", ProposalTitle: "裁判易讀與量刑參考小幫手", SeqNum: "110" }
+                        , { ProposalID: "129", TeamName: "超時空3DVR特搜戰隊", ProposalTitle: "古蹟防災刻不容緩，運用3DVR技術達成宣導教育功效", SeqNum: "111" }
+                        , { ProposalID: "93", TeamName: "農稅", ProposalTitle: "稅則稅率", SeqNum: "112" }
+                        , { ProposalID: "76", TeamName: "復農者聯盟(Agri-vengers)", ProposalTitle: "站在巨人肩膀上務農", SeqNum: "113" }
+                        , { ProposalID: "136", TeamName: "探險樂消遙", ProposalTitle: "國土消遙遊", SeqNum: "114" }
+                        , { ProposalID: "71", TeamName: "", ProposalTitle: "以人臉辨識技術加速港口之船筏及人員通關", SeqNum: "115" }
+                        , { ProposalID: "2", TeamName: "農益", ProposalTitle: "循環農業", SeqNum: "116" }
+                        , { ProposalID: "66", TeamName: "苗稅牌照", ProposalTitle: "使用牌照稅退稅", SeqNum: "117" }
+                        , { ProposalID: "59", TeamName: "桃園系統整合隊", ProposalTitle: "台灣地區即時活動人數", SeqNum: "118" }
+                        , { ProposalID: "120", TeamName: "點亮黑暗中的那盞燈", ProposalTitle: "智慧路燈", SeqNum: "119" }
+                        , { ProposalID: "98", TeamName: "河川疏濬看得到", ProposalTitle: "智慧河川疏濬管理物聯網", SeqNum: "120" }
+                        , { ProposalID: "100", TeamName: "財稅小幫手", ProposalTitle: "房地移轉登記真輕鬆", SeqNum: "121" }
+                        , { ProposalID: "14", TeamName: "神聖傅立葉轉換隊", ProposalTitle: "轉乘系統", SeqNum: "122" }
+                        , { ProposalID: "105", TeamName: "嘉義縣政府", ProposalTitle: "農業產銷大數據平台", SeqNum: "123" }
+                        , { ProposalID: "83", TeamName: "林憫", ProposalTitle: "道德風險", SeqNum: "124" }
+                        , { ProposalID: "81", TeamName: "林澄", ProposalTitle: "經碳排程", SeqNum: "125" }
+                        , { ProposalID: "28", TeamName: "要，不藥的安全", ProposalTitle: "科技天眼，手搖飲安心喝", SeqNum: "126" }
+                        , { ProposalID: "73", TeamName: "神通小兵", ProposalTitle: "健保醫療費用爭議審議無紙化", SeqNum: "127" }
+                        , { ProposalID: "3", TeamName: "農能", ProposalTitle: "終身學習", SeqNum: "128" }
+                        , { ProposalID: "50", TeamName: "教育", ProposalTitle: "私立幼兒園公文電子化", SeqNum: "129" }
+                        , { ProposalID: "24", TeamName: "資料申請小幫手", ProposalTitle: "資料申請小幫手", SeqNum: "130" }
+                        , { ProposalID: "68", TeamName: "", ProposalTitle: "稅務個人電信資訊", SeqNum: "131" }
+                        , { ProposalID: "132", TeamName: "國土智慧巡守隊", ProposalTitle: "產業聚落水戰情預測管理平台", SeqNum: "132" } 
                     ]
                 };
+
+                data.datas = shuffle(data.datas);
 
                 //初始化 elementId, 資料
                 dVote("d-vote", data);
 
             });
+            
+            function shuffle(sourceArray) {
+                for (var i = 0; i < sourceArray.length - 1; i++) {
+                    var j = i + Math.floor(Math.random() * (sourceArray.length - i));
+
+                    var temp = sourceArray[j];
+                    sourceArray[j] = sourceArray[i];
+                    sourceArray[i] = temp;
+                }
+                return sourceArray;
+            }
+
         </script>
     </head>
     <body>
